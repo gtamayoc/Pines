@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Pines</string>
+<string name="hintNombre">Aquí ingresar tu nombre</string>
+<string name="editTextNombre">Ingresar Nombre</string>
+<string name="hintApellido">Aquí ingresar tu apellido</string>
+<string name="editTextApellido">Ingresar Apellido</string>
+<string name="hintDocumento">Aquí ingresar tu documento</string>
+<string name="editTextDocumento">Ingresar Documento</string>
+<string name="hintCorreo">Aquí ingresar tu correo</string>
+<string name="editTextCorreo">Ingresar Correo</string>
+<string name="hintUsuario">Aquí ingresar tu usuario</string>
+<string name="editTextUsuario">Ingresar Usuario</string>
+<string name="hintContrasena">Aquí ingresar tu Contraseña</string>
+<string name="editTextContrasena">Ingresar Contraseña</string>
+<string name="hintContrasena1">Aquí vuelve a ingresar tu Contraseña</string>
+<string name="editTextContrasena1">Repetir Contraseña</string>
+<string name="Registrarse">Registrarse</string>
+<string name="botonRegistrar">Registrarse</string>
+<string name="botonRegistra">Registrarse</string>
+<string name="botonLoguear">Loguearse</string>
+<string name="editTextLoginUsuario">Ingresar Nombre de usuario</string>
+<string name="editTextLoginContrasena">Ingresar Contraseña</string>
+<string name="historial">Historial</string>
+<string name="textBienvenida">¡Bienvenido de nuevo!</string>
+<string name="textBienvenida2">Inicia sesión para continuar</string>
+<string name="olvidasteContraseña">Olvidaste tu contraseña</string>
+<string name="textLoguearse">Loguearse</string>
+<string name="textRecordarContraseña">Recordar Contraseña</string>
+<string name="IniciarSesion">Iniciar Sesión</string>
+<string name="nombrePaquete">Nombre del plan</string>
+<string name="precio">Precio</string>
+<string name="codigo">Código</string>
+<string name="fecha">Fecha</string>
+<string name="documento">Ingresar Documento</string>
+<string name="ingresarElDocumento">Ingresar El Documento</string>
+<string name="comprador">Comprador</string>
+<string name="fechaCompra">Fecha de compra</string>
+<string name="plan">Plan</string>
+<string name="pagar">Pagar</string>
+<string name="checklist">CheckList</string>
+<string name="bienvenida">Hola, </string>
+<string name="tituloPlanes">Planes de  </string>
+<string name="tyc">Aceptar términos y condiciones</string>
+
+    </resources>

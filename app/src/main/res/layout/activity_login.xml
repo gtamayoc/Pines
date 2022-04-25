@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoLogin"
+    tools:context=".login">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.11148086" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.016632017" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88186353" />
+
+
+    <TextView
+        android:id="@+id/iniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IniciarSesion"
+        android:textColor="@color/FondoTextoLogin"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH6"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH1" />
+
+    <ImageView
+        android:id="@+id/imagenInicio"
+        android:layout_width="400px"
+        android:layout_height="300px"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH6"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextNombreUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/editTextLoginUsuario"
+        android:textColorHint="@color/FondoTextLogin"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextcontrasena"
+        app:layout_constraintEnd_toEndOf="@id/lineaV2"
+        app:layout_constraintStart_toStartOf="@id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH5">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLoginNombreUsuario1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FondoEditTextLogin"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:maxLength="15"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextcontrasena"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/editTextLoginContrasena"
+        android:textColorHint="@color/FondoTextLogin"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox1"
+        app:layout_constraintEnd_toEndOf="@id/lineaV2"
+        app:layout_constraintStart_toStartOf="@id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreUsuario"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLoginContrasena1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FondoEditTextLogin"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoguear"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRegist"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcontrasena">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/textRecordarContraseña"
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonRegist"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/FondoBotonRegistrar"
+        android:text="@string/olvidasteContraseña"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoguear"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcontrasena" />
+
+
+    <Button
+        android:id="@+id/buttonLoguear"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="270dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/FondoBotonLogin"
+        android:text="@string/botonLoguear"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+        app:layout_constraintVertical_bias="0.3"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="559dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoguear"
+        app:layout_constraintVertical_bias="0.2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"
+
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/FondoBotonRegistrar"
+            android:text="@string/botonRegistra"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLoguear"
+            app:layout_constraintVertical_bias="0.3"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="667dp"
+
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBienvenida"
+        android:textColor="@color/FondoBotonLogin"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH2"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintVertical_bias="9"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBienvenida2"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintVertical_bias="0.01"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

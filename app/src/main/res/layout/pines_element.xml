@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iconoImagen"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/netflix"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/linearLayout"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="-451dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="-403dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@id/linearLayout"
+                android:layout_toEndOf="@+id/iconoImagen"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombrePin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Netflix"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/nombrePinDescrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="Mejor Plataforma Para Streaming de video"
+                    android:textColor="@color/FondoTextLogin"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/nombrePindisponibilidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="4 planes disponibles"
+                    android:textColor="@color/FondoTextLogin"
+                    android:textSize="15dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

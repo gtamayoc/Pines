@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DescripcionPlanes">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.016632017" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.113144755" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.028286189" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <ImageButton
+        android:id="@+id/imageAtras"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/atras"
+        app:layout_constraintBottom_toTopOf="@+id/guia1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        android:background="@color/Fondotrasnparent"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.62" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaH7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <TextView
+        android:id="@+id/checkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check List"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guia1"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombrePlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nombre Paquete"
+        android:textColor="#423951"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH2"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombrePlan1" />
+
+    <TextView
+        android:id="@+id/tvNombrePlan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nombrePaquete"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvNombrePlan"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH1" />
+
+    <TextView
+        android:id="@+id/Precio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Precio"
+        android:textColor="#423951"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH3"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@+id/Precio1" />
+
+    <TextView
+        android:id="@+id/Precio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Precio"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH2" />
+
+    <TextView
+        android:id="@+id/Codigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Codigo"
+        android:textColor="#423951"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH4"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintTop_toBottomOf="@id/Codigo1"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1" />
+
+    <TextView
+        android:id="@+id/Codigo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/codigo"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Codigo"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH3" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fecha"
+        android:textColor="#423951"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvHora"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@id/Fecha1" />
+
+    <TextView
+        android:id="@+id/Fecha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/fecha"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Fecha"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH4" />
+
+    <TextView
+        android:id="@+id/DocumentoComprador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/documento"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etDocumentoComprador"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH5" />
+
+    <EditText
+        android:id="@+id/etDocumentoComprador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/ingresarElDocumento"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH6"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@id/DocumentoComprador" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/pagar"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH7"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toTopOf="@+id/lineaH6" />
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hora"
+        android:textColor="#423951"
+        android:textSize="24sp"
+        app:layout_constraintVertical_bias="0.1"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/lineaH5"
+        app:layout_constraintEnd_toStartOf="@+id/lineaV2"
+        app:layout_constraintStart_toStartOf="@+id/lineaV1"
+        app:layout_constraintTop_toBottomOf="@id/Fecha"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
